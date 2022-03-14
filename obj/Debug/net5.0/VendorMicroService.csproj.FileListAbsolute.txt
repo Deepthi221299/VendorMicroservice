@@ -59,3 +59,6 @@ C:\Users\2063635\source\repos\VendorMicroService\obj\Debug\net5.0\VendorMicroSer
 C:\Users\2063635\source\repos\VendorMicroService\obj\Debug\net5.0\ref\VendorMicroService.dll
 C:\Users\2063635\source\repos\VendorMicroService\obj\Debug\net5.0\VendorMicroService.pdb
 C:\Users\2063635\source\repos\VendorMicroService\obj\Debug\net5.0\VendorMicroService.genruntimeconfig.cache
+C:\Users\2063635\source\repos\VendorMicroService\bin\Debug\net5.0\log4net.config
+C:\Users\2063635\source\repos\VendorMicroService\bin\Debug\net5.0\log4net.dll
+C:\Users\2063635\source\repos\VendorMicroService\bin\Debug\net5.0\Microsoft.Extensions.Logging.Log4Net.AspNetCore.dll

@@ -10,7 +10,7 @@ using VendorMicroService.Context;
 namespace VendorMicroService.Migrations
 {
     [DbContext(typeof(VendorContext))]
-    [Migration("20220314064008_VendorMigration")]
+    [Migration("20220314181344_VendorMigration")]
     partial class VendorMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

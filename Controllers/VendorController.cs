@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,12 +15,12 @@ namespace VendorMicroService.Controllers
     public class VendorController : ControllerBase
     {
         IVendorDetail<Vendor> _vendor;
-        // private readonly ILogger<VendorController> _logger;
-        //  static readonly log4net.ILog _log4net = log4net.LogManager.GetLogger(typeof(VendorController));
+        private readonly log4net.ILog _log4net;
+         
         public VendorController(IVendorDetail<Vendor> vendor)
         {
             _vendor = vendor;
-            //  _logger = logger;
+             _log4net= log4net.LogManager.GetLogger(typeof(VendorController));
         }
 
         // GET: api/<VendorController>
@@ -33,7 +34,7 @@ namespace VendorMicroService.Controllers
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
-            //log4net.Info("Getting Info");
+            _log4net.Info("Getting Info");
             return Ok(_vendor.GetVendor(id));
         }
 
