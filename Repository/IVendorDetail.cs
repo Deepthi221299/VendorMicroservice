@@ -10,6 +10,8 @@ namespace VendorMicroService.Repository
     {
         public IEnumerable<Vendor> GetAll();
         public IEnumerable<Vendor> GetVendor(int Id);
-        public void PostStock(VendorStock vs);
+        public List<VendorStock> GetVendorStockById(int id);
+
+
     }
 }

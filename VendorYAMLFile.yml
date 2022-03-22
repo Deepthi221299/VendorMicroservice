@@ -1,0 +1,33 @@
+﻿apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vendorconfigdepl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: Vendorconfig
+  template:
+    metadata:
+      labels:
+        app: Vendorconfig
+    spec:
+      containers:
+      - name: vendorrepos
+        image: vendorctr.azurecr.io/vendorrepos:latest
+        ports:
+        - containerPort: 8080
+      imagePullSecrets:
+      - name: vendor
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: vendorconfig
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+  selector:
+    app: Vendorconfig

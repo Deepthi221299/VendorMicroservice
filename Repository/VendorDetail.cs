@@ -19,6 +19,11 @@ namespace VendorMicroService.Repository
         {
             return _context.Vendors.ToList();
         }
+        
+        public List<VendorStock>  GetVendorStockById(int id)
+        {
+            return _context.VendorStocks.Include(v => v.Vendor).Where(x => x.ProductId == id).ToList();
+        }
         public IEnumerable<Vendor> GetVendor(int id)
         {
             try
@@ -32,14 +37,7 @@ namespace VendorMicroService.Repository
                 return null;
             }
 
-
-
         }
-        public void PostStock(VendorStock vs)
-        {
-            vs.ReplinshmentDate = Convert.ToDateTime(vs.ReplinshmentDate);
-            _context.VendorStocks.Add(vs);
-            _context.SaveChanges();
-        }
+        
     }
 }

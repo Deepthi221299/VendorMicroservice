@@ -29,7 +29,6 @@ C:\Users\2063635\source\repos\VendorMicroService\bin\Debug\net5.0\Microsoft.Iden
 C:\Users\2063635\source\repos\VendorMicroService\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\2063635\source\repos\VendorMicroService\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\2063635\source\repos\VendorMicroService\bin\Debug\net5.0\Microsoft.OpenApi.dll
-C:\Users\2063635\source\repos\VendorMicroService\bin\Debug\net5.0\Newtonsoft.Json.dll
 C:\Users\2063635\source\repos\VendorMicroService\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\2063635\source\repos\VendorMicroService\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\2063635\source\repos\VendorMicroService\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -62,3 +61,4 @@ C:\Users\2063635\source\repos\VendorMicroService\obj\Debug\net5.0\VendorMicroSer
 C:\Users\2063635\source\repos\VendorMicroService\bin\Debug\net5.0\log4net.config
 C:\Users\2063635\source\repos\VendorMicroService\bin\Debug\net5.0\log4net.dll
 C:\Users\2063635\source\repos\VendorMicroService\bin\Debug\net5.0\Microsoft.Extensions.Logging.Log4Net.AspNetCore.dll
+C:\Users\2063635\source\repos\VendorMicroService\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
